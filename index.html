@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <p>Boton de enviar SUBMIT</p>
+    <form action="../archivo.php" target="_blank">
+        Boton enviar:
+        <input type="submit" value="Enviar Datos">
+    </form>
+
+    <hr>
+    <P>Campo de TEXTO</P>
+    <form action="../archivo.php" target="_blanck">
+
+        <p>Ingresa tu nombre: <input type="text" name="nombrecompleto"></p>
+        <p>Ingresa tus apellidos: <input type="text" name="apellidos"></p>
+        <p>Deja tu mensaje: <br>
+        <textarea name="mensaje"></textarea> </p>
+
+    </form>
+    <hr>
+
+    <p>Componente de selección - CASILLA DE VERIFICACIÓN</p>
+    <form action="../archivo.php" target="_blanck">
+        <p>
+            Selecciona tus interestes: <br/>
+            <input type="checkbox" name="peliculas"> Peliculas <br/>
+            <input type="checkbox" name="deportes"> Deportes <br/>
+            <input type="checkbox" name="lectura"> Lectura <br/>
+            <input type="checkbox" name="videojuegos"> Video Juegos <br>
+            <input type="checkbox" name="cocina"> Concina <br>
+        </p>
+        <input type="submit" value="enviar">
+    </form>
+
+
+    <hr>
+    <p>Botones de Opción</p>
+    <form action="../archivo.php" target="_blank">
+        <p>Selecciona el rango de Ingresos: <br/>
+            <input type="radio" name="ingresos" value="menosDe1000">menos de 1'000.000 <br/>
+            <input type="radio" name="options" value="desde1000hasta1500 ">entre 1'000.000 y 1'500.000<br/>
+            <input type="radio" name="options" value="desde1500hasta2000"> entre 1'500.000 hasta 2'000.000<br/>
+
+            <input type="submit" value="enviar">
+        </p>
+    </form>
+    <hr>
+
+
+    <p>Manejo de listas en los formularios</p>
+    <form action="../archivo.php" target="_blank">
+    
+        <p>Nivel de estudios realizados:
+
+            <select name="estudios">
+                <option value="Primario">Primario</option>
+                <option value="Secundario">Secundario</option>
+                <option value="Técnico">Técnico</option>
+                <option value="Tecnológico">Tecnológico</option>
+                <option value="Profesional">Profesional</option>
+                <option value="Especialización">Especialización</option>
+            </select>
+        </p>
+        <p><input type="submit" value="enviar"></p>
+    </form>
+    <hr>
+    
+    <p>Manejo de listas con selección Multiple</p>
+    <form action="../archivo.php" target="_blank">
+        <p>Selecciona las categorias de tu interes:
+            <select multiple name="categorias[]">
+                <option value="arte">Arte y entretenimiento</option>
+                <option value="tv">Televisión y Peliculas</option>
+                <option value="infantil">Niños y jovenes</option>
+                <option value="dramatizados">Dramatizados</option>
+            </select>
+        </p>
+        <p><input type="submit" value="enviar"></p>
+        
+    </form>
+    <hr>
+
+    <p>Botones de reinicio</p>
+    <form action="../archivo.php" target="_blank">
+        <p>Enviar mensaje: <input type="text" name="mensaje" value="Ya puedes enviar"> </p>
+        <p>
+            <input type="radio" name="cuando" value="hoy" checked>Hoy <br>
+            <input type="radio" name="cuando" value="Mañana">Mañana <br>
+        </p>
+        <p><input type="checkbox" name="copia" checked> Enviarme una copia</p>
+        <input type="reset" name="reset" value="Restablecer valores">
+        <input type="submit" value="Enviar mensaje">
+    </form>
+
+
+    <p>Etiqueta de Controles</p>
+    <form action="">
+        <p><label>Nombre: <input type="text" name="nombre"> </label></p>
+        <p>
+            Genero:<br>
+            <label><input type="radio" name="genero" value="Masculino">Masculino</label><br>
+            <label><input type="radio" name="genero" value="Femenino">Femenino</label><br>
+        </p>
+
+        <p>Novedades
+            <p> <label><input type="checkbox" name="novedades">Me gustaría recibir novedades</label></p>
+
+        </p>
+    </form>
+    <hr>
+
+    <p>Agrupación de controles</p>
+    <form action="../archivo.php" target="_blank">
+        <fieldset>
+            <legend>Información Personal</legend>
+            <p><label>Nombre: <input type="text" name="nombre"></label></p>
+            <p><label>Apellido: <input type="text" name="apellidos"></label></p>
+            <p><label>Dirección: <input type="text" name="dirección"></label></p>
+            <p><label>Teléfono: <input type="text" name="telefono"></label></p>
+            <p><label>Edad: <input type="text" name="edad"></label></p>
+        </fieldset>
+        <fieldset>
+            <legend>Preferencias</legend>
+            <p>Selecciona las categorias de tu interes:
+                <select multiple name="categorias[]">
+                    <option value="arte">Arte y entretenimiento</option>
+                    <option value="tv">Televisión y Peliculas</option>
+                    <option value="infantil">Niños y jovenes</option>
+                    <option value="dramatizados">Dramatizados</option>
+                </select>
+            </p>
+        </fieldset>
+        <p><input type="submit" value="enviar"></p>
+
+        <fieldset>
+            <legend>Formulario con boton de Imagen</legend>
+            <p><label>Nombre: <input type="text" name="nombre"></label></p>
+            <p><label>Apellido: <input type="text" name="apellido"></label></p>
+            <p>Ingrese fecha de nacimiento: <input type="date" name="fechNacimiento" min="1990-01-01" max="2021-09-11"></p>
+            <p>
+                <label>Dia: <input type="number" name="dia" min="1" max="31"></label>
+                <label>Mes: <input type="number" name="mes" min="1" max="12"></label>
+                <label>Año: <input type="number" name="anyo" min="1990" max="2021"></label>
+
+            </p>
+
+
+            <input type="image" src="../CristianCastro.jpg" alt="Boton Enviar"  width="100" height="100" border=1>
+        </fieldset>
+    </form>
+    <hr>
+
+
+
+</body>
+</html>

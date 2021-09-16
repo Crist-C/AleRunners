@@ -14,9 +14,9 @@ Sistema de gestión de planes de entrenamiento
 ## Patrón de diseño MVC
 Es un patrón de diseño de software para programación que propone separar el código de los programas por sus diferentes responsabilidades.
 
-### Modelo
-Vista
-Controlador
+- Modelo
+- Vista
+- Controlador
  
 ### Modelo
 Es la representación de la información con la cual el sistema opera, gestiona todos los accesos a dicha información, tanto consultas como actualizaciones (lógica de negocio).

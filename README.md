@@ -1,7 +1,7 @@
 # AleRunners
 Sistema de gestión de planes de entrenamiento
 
-##PROYECT´s GOALS
+## Proyect´s Goals
 
 - Diagrama de Clases
 - Diagrama ER
